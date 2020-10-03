@@ -1,1 +1,26 @@
 /* this is for you to complete */
+div > p a {
+    color: green;
+}
+
+ div:nth-child(2) p a {
+    color: purple;
+    background-color: yellow;
+}
+
+ul li:nth-child(2) ul {
+    color: blue;
+}
+
+ul li:nth-child(2) ul li:nth-child(3) ul {
+    list-style: none;
+
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+ul li a {
+    color: red;
+}

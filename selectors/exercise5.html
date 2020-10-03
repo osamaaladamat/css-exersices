@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #5: Specificity calculation
+
+    </title>
+    <style>
+        /* add CSS here*/
+        body {
+            font-size: 18px;
+        }
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Compute the specificity scores</h1> 
+
+        * { } <span> >>> 0</span><br><br> <br>
+        li { } <span> >>>1</span><br><br> <br>
+        li:first-line { } <span> >>>2</span><br><br> <br>
+        ul li { }<span> >>>2</span><br><br> <br>
+        ul ol+li { } <span> >>>3</span><br><br> <br>
+        h1 + *[rel=up] { } <span> >>>11</span><br><br> <br>
+        ul ol li.red { } <span> >>>13</span><br><br> <br>
+        li.red.level { } <span> >>>21</span><br><br> <br>
+        style="" <span> >>>1</span><br><br> <br>
+        p { } <span> >>>1</span><br><br> <br>
+        div p { } <span> >>>2</span><br><br> <br>
+        .sith <span> >>>1</span><br><br> <br>
+        div p.sith { } <span> >>>12</span><br><br> <br>
+        #sith <span> >>>1</span><br><br> <br>
+        body #darkside .sith p { } <span> >>>112</span><br><br> <br>
+     </div>
+</body>
+</html>
